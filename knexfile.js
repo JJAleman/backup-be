@@ -1,5 +1,7 @@
 require("dotenv").config();
 
+// const connectionString = process.env.DATABASE_URL || "postgresql://localhost/d6op2os7hekn4m"
+
 module.exports = {
   development: {
     client: "pg",
