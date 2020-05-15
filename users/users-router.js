@@ -9,8 +9,12 @@ router.get("/", (req, res) => {
     .then(users => {
       res.status(200).json(users);
     })
-    .catch(err => res.send(err));
-});
+    .catch(err => {
+        res.status(500).json({ message: "error getting the users."
+    })
+})
+})
+
 
 
 module.exports = router;
